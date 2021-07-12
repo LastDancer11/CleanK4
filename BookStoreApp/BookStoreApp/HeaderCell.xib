@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="BookStoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowImage" translatesAutoresizingMaskIntoConstraints="NO" id="04R-UU-3bV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="375" id="45D-Mw-jJH"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-1O-CjH">
+                        <rect key="frame" x="0.0" y="230" width="320" height="250"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="qle-dk-EIW"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kA0-fO-MtU">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Thoughts Exactly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-Gl-spu">
+                        <rect key="frame" x="75" y="68" width="170.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lwd-Vz-JeY">
+                        <rect key="frame" x="38.5" y="114.5" width="243.5" height="77"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLI-xA-pux">
+                                <rect key="frame" x="0.0" y="0.0" width="243.5" height="57.5"/>
+                                <string key="text">'An unflinching,
+unputdownable book'</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guardian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxx-UY-sCQ">
+                                <rect key="frame" x="0.0" y="57.5" width="243.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hnf-1O-CjH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1RD-ak-ebB"/>
+                    <constraint firstItem="2Jp-Gl-spu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CNc-Ei-Zhq"/>
+                    <constraint firstItem="lwd-Vz-JeY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IkI-tO-1Kz"/>
+                    <constraint firstAttribute="bottom" secondItem="Hnf-1O-CjH" secondAttribute="bottom" id="M6k-Rx-SUD"/>
+                    <constraint firstItem="04R-UU-3bV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ulk-bZ-jyC"/>
+                    <constraint firstItem="Hnf-1O-CjH" firstAttribute="top" secondItem="04R-UU-3bV" secondAttribute="bottom" constant="-145" id="ZMe-TI-6mj"/>
+                    <constraint firstItem="2Jp-Gl-spu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="68" id="Zeg-Yh-bg9"/>
+                    <constraint firstAttribute="trailing" secondItem="04R-UU-3bV" secondAttribute="trailing" id="bqM-cN-eAu"/>
+                    <constraint firstItem="lwd-Vz-JeY" firstAttribute="top" secondItem="2Jp-Gl-spu" secondAttribute="bottom" constant="26" id="j1n-yZ-fmm"/>
+                    <constraint firstAttribute="trailing" secondItem="Hnf-1O-CjH" secondAttribute="trailing" id="mkC-nN-zx0"/>
+                    <constraint firstItem="04R-UU-3bV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wdj-Yk-jFv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="Hnf-1O-CjH" id="hwr-bK-WUH"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="91"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yellowImage" width="375" height="375"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
